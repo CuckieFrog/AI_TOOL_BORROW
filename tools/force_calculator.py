@@ -1,7 +1,15 @@
-print("Force Calculator Running")
+print("Force Scenario Calculator\n")
 
-mass = 10
-acceleration = 9.8
+mass = float(input("Enter mass (kg): "))
+acceleration = float(input("Enter acceleration (m/s^2): "))
+
 force = mass * acceleration
 
-print(f"Force = {force}N")
+print(f"\nCalculated Force: {force} N")
+
+if force < 50:
+    print("Low force scenario")
+elif force < 200:
+    print("Moderate force scenario")
+else:
+    print("High force scenario")
